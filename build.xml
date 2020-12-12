@@ -36,9 +36,6 @@
 
 </jar>
 
-<delete dir="${dir.jarfile}/FroggyJump"/>
-
-<mkdir dir="${dir.jarfile}/FroggyJump"/>
 
 <copy todir="${dir.jarfile}/FroggyJump" file="${dir.workspace}\javafx.base.jar"/>
 
