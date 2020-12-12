@@ -52,7 +52,7 @@ public class MainMenu extends Application {
     public gameMenu gameMenu;
     AnimationTimer timer;
     MyStage background;
-	Animal animal,level,end;
+	Animal animal;
     public  Stage pStage,sStage;
 	public Scene scene,scene1,scene2;
 	public Stage secondaryStage; 
