@@ -78,7 +78,7 @@
    
    
 # User Guide to launching the game application
-
+**YOU MUST HAVE DOWNLOADED JAVAFX AND APACHE ANT TO YOUR DESKTOP BEFORE THESE INSTRUCTIONS.**
 **Follow the instructions to launch the game application in your desktop**
 
 1. Download the whole `master` COMP2042_CW_JongYenShuang-YeXian repository zip file into your desktop.
