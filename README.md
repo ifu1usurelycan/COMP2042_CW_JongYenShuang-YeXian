@@ -78,30 +78,35 @@
    
    
 # User Guide to launching the game application
-**YOU MUST HAVE DOWNLOADED JAVAFX AND APACHE ANT TO YOUR DESKTOP BEFORE THESE INSTRUCTIONS.**
+**YOU MUST HAVE DOWNLOADED javafx-sdk-11.0.2 (or above) AND apache-ant-1.10.9 (or above) TO YOUR DESKTOP BEFORE THESE INSTRUCTIONS.**
 
 ##### **Follow the instructions to launch the game application in your desktop**
-
 1. Download the whole `master` COMP2042_CW_JongYenShuang-YeXian repository zip file into your desktop.
 2. Save your zip file into a new folder and right-click select `Extract Here`.
-3. Open FroggerJump file folder and copy the path.
-4. Open build file with right-click and select `Edit`.
-5. Replace by pasting your path to all `${dir.workspace}` in the build.xml file which the path is the location of the downloaded file in your desktop.
-6. Open Window -> Command Prompt 
-7. Input 
+3. Use eclipse and open the whole COMP2042_CW_JongYenShuang-YeXian-master file.
+4. Right-click the FroggyJump and choose `Build Path`> `Configure Build Path...`> `Libraries`> `Classpath`> `Add Library`> `User Library`> `next`> `User Libraries...`> `New`> `Add external JARs`> and import all the files from "C:\Users\User\Downloads\frog\COMP2042_CW_JongYenShuang-YeXian-master\FroggyJump"> `Apply and Close`.
+5. Right-click the application.MainMenu.java select `Run As...`> `Run Configuratons`> `Arguments`> `VM Arguments`> paste the code below and `run`.
+  - NOTE:` ${dir.workspace}` is the location where you download the file.
+```
+--module-path "${dir.workspace}\COMP2042_CW_JongYenShuang-YeXian-master\javafx-sdk-11.0.2\lib" --add-modules=ALL-MODULE-PATH
+```
+6. Go back to your desktop and open FroggerJump file folder and copy the path.
+7. Replace by pasting your path to all `${dir.workspace}` in the build.xml file which the path is the location of the downloaded file in your desktop then `save`.
+8. Open Window -> Command Prompt 
+9. Input 
 ```
 cd C: ${dir.workspace}\COMP2042_CW_JongYenShuang-YeXian-master
 ```
-8. press `ENTER` then you will see 
+10. press `ENTER` then you will see 
 ```
 C:\ ${dir.workspace}\COMP2042_CW_JongYenShuang-YeXian-master>
 ```
-9. Then input `ant` after it and press `ENTER` key.
-10. Open javafx-sdk-11.0.2\lib in your downloaded file and copy the path.
-11. If the ant build file `BUILD SUCCESSFUL`, copy the code below and replace `${dir.workspace}` to the path of the location where you download the file.
+11. Then input `ant` after it and press `ENTER` key.
+12. Open javafx-sdk-11.0.2\lib in your downloaded file and copy the path.
+13. If the ant build file `BUILD SUCCESSFUL`, copy the code below and replace `${dir.workspace}` to the path of the location where you download the file.
 ```
 java --module-path "${dir.workspace}\COMP2042_CW_JongYenShuang-YeXian-master\javafx-sdk-11.0.2\lib" --add-modules=ALL-MODULE-PATH -jar FroggyJump.jar
 ```
-12.Press the `ENTER` key and you can successfully launch the game application.
+14.Press the `ENTER` key and you can successfully launch the game application.
 
   
